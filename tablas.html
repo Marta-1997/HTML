@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+    table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        padding: 10px;
+    }
+
+</style>
+</head>
+<body>
+    <h2>Clase para crear tablas</h2>
+
+<!--Definir la tabla con la etiqueta <table>  </table>-->
+    <table>
+        <tr> <!--Para hacer filas-->
+            <th>Nombre</th> <!--Para hacer celdas tipo encabezado en negrita-->
+            <th>Apellidos</th>
+            <th>DNI</th>
+        </tr>
+        <tr>
+            <td>Marta</td> <!--Para hacer celdas sencillas-->
+            <td>Huertas</td>
+            <td>06549724G</td>
+        </tr>
+        <tr>
+            <td>José</td>
+            <td>García</td>
+            <td>05656645D</td>
+        </tr>
+        <caption>Tabla Sencilla</caption>
+    </table>
+
+<h2>Tabla con doble encabezado, uno horizontal y otro vertical</h2>
+    <table>
+        <caption>Listado de Meses y Estaciones</caption>
+        <tr>
+            <th></th>
+            <th>Invierno</th>
+            <th>Primavera</th>
+            <th>Otoño</th>
+            <th>Verano</th>
+        </tr>
+        <tr>
+            <th>Priemro</th>
+            <td>58</td>
+            <td>965</td>
+            <td>68</td>
+            <td>78</td>
+        </tr>
+        <tr> <!--tr>td*5 para que te lo multiplique-->
+            <th>Segundo</th>
+            <td>544</td>
+            <td>6545</td>
+            <td>55</td>
+            <td>545</td>
+        </tr>
+        <tr>
+            <th>Tercero</th>
+            <td>0525</td>
+            <td>521</td>
+            <td>45</td>
+            <td>566</td>
+        </tr>
+
+    </table>
+
+    <table>
+        <caption>Tabla con rowspan;en forma vertictal</caption>
+        <tr>
+            <th>Enero</th>
+            <th>Febrero</th>
+            <th>Marzo</th>
+        </tr>
+        <tr>
+            <td>457</td>
+            <td>564</td>
+            <td>021</td>
+        </tr>
+        <tr>
+            <td>250</td>
+            <td rowspan="2">125</td>
+            <td>445</td>
+        </tr>
+        <tr>
+            <td>455</td>
+            <td>555</td>
+        </tr>
+    </table>
+    <table> 
+        <caption>Tabla con colspan; en forma horizontal</caption>
+        <tr>
+            <th>Enero</th>
+            <th>Febrero</th>
+            <th>Marzo</th>
+        </tr>
+        <tr>
+            <td>457</td>
+            <td>564</td>
+            <td>021</td>
+        </tr>
+        <tr>
+            <td>250</td>
+            <td colspan="2">457</td>
+        </tr>
+        <tr>
+            <td>455</td>
+            <td>555</td>
+            <td>456</td>
+        </tr>
+    </table>
+
+
+</body>
+</html>

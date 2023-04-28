@@ -13,7 +13,7 @@
     <!--esto es un comentario que no se va a mostrar en la página-->
  <!--TITULOS EN HTML-->
     <h1>Título de mi página &uacute; <!--codigo ASCII--></h1>
-    <h2>TÍtulo 2</h2>
+    <h2 id="ElementoH2" name="ElementoH2">TÍtulo 2</h2> <!--Id como atributo de llamada-->
     <h3>TÍtulo 3</h3>
     <h4>TÍtulo 4</h4>
     <h5>TÍtulo 5</h5>
@@ -184,7 +184,50 @@
     </details>
 
 <!--IMPORTANTE: ENLACES ENTRE PAGINAS EXTERNAS HE INTERNAS-->
+<!--Los links son importantes en las páginas web
+    1- Me crean enlaces externos (a otra URBL, si la url es externa: http/google.es)
+    2- Puedes crear enlaces internos en el mismo proyecto; del index.html enlazar con contacto.html
+    3- Puedo crear enlaces en la misma página; del pie de pagina enlazar con el header-->
+<!--Ejemplo 1. Enlaces a páginas externas-->
     <a href="https://google.es" title="Ir a google" target="_blank">voy a la pagina de google</a>
+<br>
+<!--Ejemplo 2. Crear enlances internos, el atributo target es para que se abra en una pestaña nueva o en la misma-->
+    <a href="segundo.html" title="Segunda página" target="_blank">Ir a un enlace del proyecto</a>
+<br>
+<!--Ejemplo 3. Crear enlaces en la misma página, utilizando como atributo de llamada el id-->
+<!--id ElementoH2 encabezadPáginaPrimera-->
+<!--name ElementoH1 encabezadPáginaPrimera-->
+    <a href="#ElementoH2" title="Ir al H2">Ir al H2</a>
+<br>
+
+<!--Con almuadilla se recarga la página-->
+    <a href="#">recargar la página</a>
+<br>
+
+    <a href="puebas/tercero.html">Tercer Html</a>
+<br>
+
+<!--con ../ subimos un nivel en la carpeta-->
+    <a href="../+cotas/index.html">Mis mascotas</a>
+<br>
+
+<!--Enlace a un archivo-->
+    <a href="etiqueta-html.pdf" target="_blank">Mostrar todas las etiquetas HTML</a> <br>
+    <a href="img/favicon.png" target="_blank">Mostrar mi favicon</a> <br>
+    <a href="archivo-prueba.docx" target="_blank">Enlace a un archivo word<a> <br>
+
+<!--Enlaces para enviar correo electrónico-->
+    <a href="mailto:irinadvalle@gmail.com" title="Envias correo">Enviar Email</a> <br>
+
+<!--Enlazar una página a traves de una imagen
+La estructura es muy sencilla:
+Enlace <a> utiliza el atributo href para indicar la url de destino.
+El contenido del enlace <a> es una imagen <img> que tiene su atributo src para indicar el origen de la imagen.-->
+        <a href="pruebas/tercero.html"><img src="img/favicon.png"></a>
+
+
+
+
 
 
 
