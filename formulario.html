@@ -17,10 +17,36 @@
 4. entype para indicar que tipo de archivo se envia desde el formulario. Ej: enctype="multipart/form-data"-->
     <form action="primer.html" method="get">
 
-        <!-- entrada de datos
-        1. etiqueta <input> : estas entradas pueden ser de; text,number, tel, email,file, -->
-        <label for=""></label>
-        <input type="text">
+<!-- entrada de datos
+1. etiqueta <input> : estas entradas pueden ser de; text,number, tel, email,file,submit(botón para enviar), range()
+2. label: etiqueta para indicar el nombre del input que se muestra
+3. placeholder: atributo del input que muestra un texto de ayuda
+4. maxlenght/minlenght: indica la longitud (caracteres maximos/minimos) maxima/minima que podrá escribir el ausuario 
+5. required: indica que es obligatorio escribir ese campo para poder enviar el formulario
+6. pattern: indica el patrón de entrada de datos, los caracteres que puedes utilizar. Ej: nombre: [a-zA-ZáéíóúÁÉÍÓÚÑñ ]+
+7. value: indica el valor inicial del input 
+Atributo IPORTANTE: autocomplete: permite que el navegador autocomplete los datos-->
+<!-- enlazar for con id. el name es el que te va a conectar el formulario con el servidor -->
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Indica tu nombre" maxlength="5" minlength="3" required pattern= "[a-zA-ZáéíóúÁÉÍÓÚÑñ ]+" autocomplete="on">
+        <label for="apellidos">Apellidos</label>
+        <input type="text" id="apellidos" name="apellidos" aria-placeholder="Indica tus apellidos" required pattern="[a-zA-ZáéíóúÁÉÍÓÚÑñ ]+" maxlength="5" minlength="3" autocomplete="on">
+        <br>
+        <label for="telefono">Telefono</label>
+        <input type="tel" id="telefono" name="telefono" aria-placeholder="Indica tu telefono" required pattern="[6789]{1}[0-9]{8}" autocomplete="on">
+        <br>
+<!-- en el pattern(patrón) lo que está dentro del corchete es lo que puede recibir y lo que esta en ña llave es la cantidad de digitos que puede recibir de lo que está en el corchete 963545415 654785134 ... pero no 456578425. Los pattern en programación de lenguajes se llaman EXPRESIONES REGULARES-->
+
+        <label for="sueldo">Sueldo esperado</label>
+        <input type="number" max="2000" id="sueldo" name="sueldo">
+        <input type="range" min="500" max="2000" id="sueldo2" name="sueldo2">
+        <br>
+<!-- en ocasiones no utilizamos la etiqueta label si no que indicamos al usuario que estamos solicitando a traves del atributo placeholder -->
+        <input type="email" placeholder="Indica tu Email" id="email" name="email">
+
+
+
+    <input type="submit" value="Enviar Formulario">
 
     </form>
 </body>
