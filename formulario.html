@@ -5,6 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        form{
+            display: block;
+            margin-top: 5%;
+        }
+        input{
+            padding: 5px 15px; /*el primero es el vertical y el segundo el horizontal */
+            width: 300px;
+        }
+    </style>
 </head>
 <body>
 <!--Ctrl+Ç para añadir comentario-->
@@ -15,7 +25,7 @@
 2. method: como se va a enviar ese formulario al action. Existen dos metodos: POST(no se muestra la ruta) o el GET (se muestra la ruta)
 3.id, name: pra identificar el formulario
 4. entype para indicar que tipo de archivo se envia desde el formulario. Ej: enctype="multipart/form-data"-->
-    <form action="primer.html" method="get">
+    <form action="primer.html" method="get" enctype="multipart/form-data">
 
 <!-- entrada de datos
 1. etiqueta <input> : estas entradas pueden ser de; text,number, tel, email,file,submit(botón para enviar), range()
@@ -43,6 +53,25 @@ Atributo IPORTANTE: autocomplete: permite que el navegador autocomplete los dato
         <br>
 <!-- en ocasiones no utilizamos la etiqueta label si no que indicamos al usuario que estamos solicitando a traves del atributo placeholder -->
         <input type="email" placeholder="Indica tu Email" id="email" name="email">
+        <br>
+<!-- insertar un archivo. es importante el atributo accept 
+aceept="image/png, image/jpeg" -->
+    <label for="archivo">Inserta tu CV</label>
+    <input type="file" id="archivo" accept=".pdf, dpcx">
+
+<!-- agrupar diferentes etiquetas y mostrarlas en bloques
+    <fielset> abre el grupo, <legend> indica un titulo del grupo (no es obligatorio)-->
+    <fieldset>
+        <legend>Datos academicos</legend>
+        <input type="text" placeholder="Titulacion" id="titulacion" name="titulacion">
+        <label for="fechaT">Fecha Titulacion</label>
+        <!-- etiqueta date que muestra un calendario para insertar una fecha-->
+        <input type="date" id="fechaT" name="fechaT">
+        <input type="text" placeholder="Institucion" name="institucion" id="institucion">
+    </fieldset>
+
+
+
 
 
 
