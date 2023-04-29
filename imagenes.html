@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imágenes en HTML</title>
+    <style>
+        #oveja,#loro,#tortuga, .galeria{
+            border: 2px solid grey;
+            width: 200px;
+            margin: 20px;
+            
+            /* opacity: 0.5;  su valor esta entre 0 y 1, 0 lo oculta y 1 se ve tal cual es*/
+        }
+        #bloque1,figure{
+            padding: 15px;
+            border: 1px dotted lightblue;
+            width: 50%;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Imágenes en HTML</h1>
+
+<!--Atributo de las imagenes 
+src: el origen de la imagen
+alt:texto identificativo para cuando no se encuentra la imagen y para la accesibilidad
+width: ancho de la imagen
+heigth: alto de la imagen-->
+    <img src="img/oveja-optimizada.webp" alt="Oveja" id="oveja">
+    <img src="img/loro.jpg" alt="Loro" id="loro">
+
+<!--Div para hacer bloques, es el elemento separador-->
+    <div id="bloque1">
+        <p>Bloque para separar las imágenes     </p>
+        <img src="img/tortuga.jpg" alt="Tortuga" id="tortuga">
+    </div>
+
+<figure> <!--Insertar una galeria, que las imagenes estan en comun-->
+    <figcaption>Animales</figcaption>
+        <img src="img/vaca.jpg" alt="Vaca" class="galeria">
+        <img src="img/zorro.jpg" alt="Zorro" class="galeria">
+        <img src="img/loro.jpg" alt="Loro" class="galeria">
+</figure>
+
+<div>
+    
+</div>
+
+
+
+
+
+</body>
+</html>
