@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>FORMULARIO DE SUSCRIPCIÓN</h1>
+
+    <fieldset>
+        <legend>Datos de Registro</legend>
+        <p><label for="email">Correo electrónico:*</label>
+        <input type="email" id="email" name="email"></p>
+<br>
+        <label for="password">Contraseña:*</label>
+        <input type="password" id="password" name="password">
+    </fieldset>
+
+    <fieldset>
+        <legend>Datos Personales</legend>
+        <p><label for="name">Nombre:*</label>
+        <input type="text" id="name" name="name"></p>
+        <p><label for="apellidos">Apellidos:*</label>
+        <input type="text" id="apellidos" name="apellidos"></p>
+        <p><label for="telefono">Telefono:</label>
+        <input type="tel" id="telefono" name="telefono" aria-placeholder="Indica tu telefono" required pattern="[6789]{1}[0-9]{8}" autocomplete="on"></p>
+        <p>Mujer: <input type="radio" name="mujer" value="mujer">
+        Hombre: <input type="radio" name="hombre" value="hombre"></p>
+        <p><label for="age">Edad:</label>
+            <input type="text" id="age" name="age"></p>
+        <p><label for="buscar">Buscar</label>
+            <input type="text" id="buscar" name="buscar"></p>
+        <p><label for="nacimiento">Fecha de nacimiento</label>
+            <input type="text" id="nacimiento" name="nacimiento">
+            <input type="date" id="fechaT" name="fechaT"></p>
+        <p> <label for="fechaYhora">Fecha y hora de nacimiento de tu padre<label>
+            <input type="datetime-local" id="fechaYhora" name="fechaYhora"></p>
+        <p><label for="mes">¿En que mes te gustaria viajar?</label>
+            <input type="month" id="mes" name="mes"></p>
+        <p><label for="mes">¿En que semana te gustaria viajar</label>
+            <input type="month" id="mes" name="mes"></p>
+        <p><label for="hora">¿A que hora te puedo llamar?</label>
+            <input type="time" id="hora" name="hora"></p>
+        <p><label for="archivo">Envia tu foto: (jpg)</label>
+            <input type="file" id="archivo" accept=".jpeg"></p>
+    </fieldset>
+    <br>
+    <fieldset>
+        <p>¿Cual utilizas?</p>
+            <br>
+            <input type="checkbox" id="facebook" name="facebook" value="facebook">
+            <label for="facebook">Facebook</label>
+            <input type="checkbox" id="twitter" name="twitter" value="twitter">
+            <label for="twitter">Twitter</label>
+            <input type="checkbox" id="linkedin" name="linkedin" value="linkedin">
+            <label for="linkedin">Linkedin</label>
+            <input type="checkbox" id="instagram" name="instagram" value="instagram">
+            <label for="instagram">Instagram</label>
+            <input type="checkbox" id="whatsapp" name="whatsapp" value="whatsapp">
+            <label for="whatsapp">WhatsApp</label>
+            <input type="checkbox" id="snapchat" name="snapchat" value="snapchat">
+            <label for="snapchat">SnapChat</label>
+            <input type="checkbox" id="pinterest" name="pinterest" value="pinterest">
+            <label for="pinterest">Pinterest</label>
+            <br>
+            <p>Tiempo aproximado que utilizas:</p>
+            1 hora<input type="range" min="500" max="2000" id="tiempo" name="tiempo">24 horas</p>
+            <label for="tuWeb">¿Tienes página Web o blog?</label>
+            <input type="url" name="tuWeb" id="tuWeb" >
+    </fieldset>
+    <p>Los datos señalados con * son obligatorios para el registro</p>
+    <input type="submit" value="aceptar">
+
+    
+</body>
+</html>
