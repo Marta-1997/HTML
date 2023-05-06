@@ -8,13 +8,30 @@
     <meta name="keyword" content="html,&quot;programacion&quot;,desarrollo web">
     <title>Mi primera web</title>
     <link rel="icon" type="image/png" href="img/favicon.png">
+    <style>
+        #elementoH1{ /*selector id*/
+            font-size: 50px; 
+            color: aquamarine;
+        }
+        .miclase{/*clase css, selector class*/
+            color: yellowgreen;
+            background-color: bisque;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        ol/*selector tipo etiqueta, ***cuidado, se aplicara a todas las etiquetas*/
+        {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 15px;
+            color: violet;
+        }
+    </style>
 </head>
 <body>
     <!--esto es un comentario que no se va a mostrar en la página-->
  <!--TITULOS EN HTML-->
-    <h1>Título de mi página &uacute; <!--codigo ASCII--></h1>
+    <h1 id="elementoH1">Título de mi página &uacute; <!--codigo ASCII--></h1>
     <h2 id="ElementoH2" name="ElementoH2">TÍtulo 2</h2> <!--Id como atributo de llamada-->
-    <h3>TÍtulo 3</h3>
+    <h3 class="miclase">TÍtulo 3</h3>
     <h4>TÍtulo 4</h4>
     <h5>TÍtulo 5</h5>
     <h6>TÍtulo 6</h6>
