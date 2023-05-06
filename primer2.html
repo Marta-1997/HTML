@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="autor" content="Marta"/>
+    <meta name="keyword" content="html,&quot;programacion&quot;,desarrollo web">
+    <title>Mi primera web</title>
+    <link rel="icon" type="image/png" href="img/favicon.png">
+</head>
+<body>
+    <!--esto es un comentario que no se va a mostrar en la página-->
+ <!--TITULOS EN HTML-->
+    <h1>Título de mi página &uacute; <!--codigo ASCII--></h1>
+    <h2 id="ElementoH2" name="ElementoH2">TÍtulo 2</h2> <!--Id como atributo de llamada-->
+    <h3>TÍtulo 3</h3>
+    <h4>TÍtulo 4</h4>
+    <h5>TÍtulo 5</h5>
+    <h6>TÍtulo 6</h6>
+    <!--symbl.cc para poner simbolos-->
+    <p>hoy va a llover &#127784;</p>
+
+<!--PARRAFOS-->
+    <p>Parrafo</p>
+    <P>Parrafo 2</P>
+
+<!--ETIQUETA BLOCKQUOTE: frases extraidas de otro origen -->
+    <blockquote>"Trata bien a los frikis, algún día trabajaráspara uno de ellos</blockquote>
+
+<!--LISTA NO ORDENADA-->
+    <ul>
+        <li>Primero</li>
+        <li>Segundo</li>
+        <li>Tercero</li>
+    </ul>
+
+    <ul type="square">
+        <li>Primero</li>
+        <li>Segundo</li>
+        <li>Tercero</li>
+    </ul>
+
+    <ul type="circle">
+        <li>Primero</li>
+        <li>Segundo</li>
+        <li>Tercero</li>
+    </ul>
+
+    <ul type="A">
+        <li>Primero</li>
+        <li>Segundo</li>
+        <li>Tercero</li>
+    </ul>
+
+<!--LISTA ORDENADA-->
+    <ol>
+        <li>Uno</li>
+        <li>Dos</li>
+        <li>Tres</li>
+        <li>Cuatro</li>
+        <li>Cinco</li>
+    </ol>
+    <!--ol>li*3 para que te multiplique-->
+    <ol type="I" start="2">
+        <li>Manzanas</li>
+        <li>Manzanas</li>
+        <li>Manzanas</li>
+    </ol>
+
+    <ol reversed>
+        <li>Manzanas</li>
+        <li>Manzanas</li>
+        <li>Manzanas</li>
+    </ol>
+
+<!--LISTA DE TERMINOS-->
+    <dl> <!--Etiqueta que abre una lista de definiciones-->
+        <dt> &rarr;HTML </dt> <!--Termino a definir-->
+            <dd>Lenguaje de marcas que permite hacer Páginas Web</dd> <!--Definición del termino-->
+        <dt>&larr;CSS</dt>
+            <dd>Lenguaje para darle estilo a las páginas web<dd>
+        <dt>PHP</dt>
+                <dd>Lenguaje para conectar páginas a un servidor y con base de datos</dd>
+        <dt>MySQL</dt>
+                <dd>Manejar base de datos</dd>
+    </dl>
+
+<!--INSERTAR UNA DIRECCIÓN DE CONTACTO-->
+    <p>Nos puedes encontrar en la siguiente dirreción</p>
+    <address style="text-transform: uppercase; font-size: large; color: red; text-decoration:underline; font-style: normal;">
+        <p>Calle nueva,81</p> 
+        <p>Tomelloso,13700. Ciudad Real</p>
+    </address>
+
+<!--TEXTO PREFORMATEADO-->
+    <p>PÁRRAFO</p>
+    <p>Esto es un parafo            de prueba</p>
+    <P>TEXTO PREFORMATEADO</P>
+    <pre>Esto es un párrafo         de prueba</pre>
+    
+<!--ETIQUETAS SIN CIERRE PARA SALTO DE LINEAS Y LINEA HORIZONTAL-->
+    <p>Lorem, ipsum dolor <br> amet consectetur adipisicing elit. Et fugiat magnam, veritatis neque iusto obcaecati architecto velit quae sequi enim voluptas. Officiis animi esse eius nihil iure, modi id!</p>
+    <br><!--Salto de linea manual-->
+    <hr style="border : 3px dotted orange"> <!--LINEA HORIZONTAL-->
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam mollitia ipsum velit quod laudantium aliquam atque quidem necessitatibus, quas obcaecati consectetur excepturi hic magni doloribus fugiat! Atque quod error est?</p>
+
+<!--CARACTERES ESPECIALES Y DE ESCAPE-->
+
+    <p style="font-size: 5rem;">&#128055;</p>
+    <pre>░░░░░░▄█▀█▄░░░░░░░░░░░░░░░
+        ░▄█▀▀▀▀░░░░▀█▄▄▄▄▄▄▄░░░░░░
+        █▀░░░░░░░░░░░░░░░░░▀█░░░░░
+        ▀▄░▄░░░░░░░░░░░░░░░▄█░░░░░
+        ░█████▄▄▄▄▄██▄▄▄█▀▀█░░░░░░
+        ░█▀█░░░░▀░░░░░▀░░░░█▀▀▀▀▀█
+        ░█░███▄▄▄▄░░░▄▄▄▄▄██▀▀██░█
+        ░█░███░████▀████░███░░█░░█
+        ░█▄███░████░████░███░░█░█▀
+        ░░░███░████░████░███░░█░█░
+        ░░░███░████░████░███▄▄█░█░
+        ░░░███░████░████░███░░░▄█░
+        ░░░███░████░████░███▀▀▀▀░░
+        ░░▄███▄████░████▄███▄░░░░░
+        ░░███▀███████████▀███░░░░░
+        ░░░░▀▀▀██▄▄▄▄▄██▀▀▀░░░░░░░</pre>
+
+<!--ETIQUETAS DE TEXTO CON VALOR SEMANTICO Y SIN VALOR SEMANTICO-->
+    
+    <p>
+        Lorem ipsum dolor <strong>amet consectetur </strong> <!--ÉNFASIS EN UNA PALABRA con valor semantico--> elit. Asperiores reiciendis obcaecati deserunt consequuntur alias. In, suscipit quaerat culpa magni corporis, neque natus alias deserunt saepe accusamus iure corrupti amet doloribus!
+    </p>
+    <P> B es para el texto en <b>negrita sin valor semantico</b></P>
+    <p>I para el texto en <i>cursiva sin valor semantico</i></p>
+    <p> EM para enfasis sencillo<em>con valor semantico</em></p>
+
+<!--INDICE Y EXPONENTE-->
+    <h1>H<sub>2</sub>o</h1>
+    <h3>MT<sup>2</sup></h3>
+
+<!--SUBRAYADO SIN VALOR SEMANTICO PERO CON SENTIDO-->
+    <p>U para <u>resaltar un texto SUBRAYADO sin importancia</u> o tiene errores ortograficos. VER INDICE<sup>1</sup></p>
+
+<!--TEXTO TACHADO-->
+    <p>Que ya no es <s>correcto</s> o pertinente</p>
+
+<!--TITULOS DE OBRAS Y CITAS o frases CORTAS, CITE para el autor o obra y Q el contenido de la cita-->
+    <p>El gran <cite>Gandhi</cite> <q>No hay camino hacia la paz, la paz es el camino</q></p>
+
+<!--TEXTOS A ELIMINAR O INSERTAR-->
+    <p>para indicar los textos que se van a eliminar o añadir <ins>INS para insertar</ins> y <del>DEL para eliminar</del></p>
+
+<!--OTROS FORMATOS SEMANTICO-->
+    <p><dfn>indica que el texto es una definicion</dfn></p>
+
+<!--EL ATRIBUTO TITLE SE PUEDE ESCRIBIR EN CASI TODAS LAS ETIQUETAS-->
+    <p><abbr title="Hypertext Markup Lenguage">HTML</abbr>para una abreviatura</p>
+    <br>
+
+<!--ETIQUETA ESPECIAL PARA MOSTRAR CODIGO DE LENGUAJE DE PROGRAMACIÓN-->
+    <code> 
+        if (a>b)¨{<br>
+            a=5;<br>
+        }
+    </code>
+
+<!--ETIQUETA PARA UNA VARIABLE MATEMATICA O INFORMATICA-->
+    <br>
+    <var>a</var>
+    <br>
+    <var>nombre</var>
+
+<!--OTROS FORMATOS SEMANTICOS-->
+    <p><samp>indica el uso de un ejemplo o muestra.</samp></p>
+    <p><kbd>indica que hace una introducción de texto por teclado.</kbd></p>
+
+ <!--ETIQUETA PARA MARCAR EL CODIGO TIPO RESALTADOR-->   
+    <p><mark>dastaca un texto</mark></p>
+
+<!--MOSTRAR DETALLES-->
+    <details>
+        <summary>Muestra la información detallada</summary>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, molestias, ipsum quidem velit iusto voluptatem voluptatibus atque ad itaque, perspiciatis saepe laborum? Mollitia optio ipsam consequuntur molestias veritatis laudantium minima.</p>       
+    </details>
+
+<!--IMPORTANTE: ENLACES ENTRE PAGINAS EXTERNAS HE INTERNAS-->
+<!--Los links son importantes en las páginas web
+    1- Me crean enlaces externos (a otra URBL, si la url es externa: http/google.es)
+    2- Puedes crear enlaces internos en el mismo proyecto; del index.html enlazar con contacto.html
+    3- Puedo crear enlaces en la misma página; del pie de pagina enlazar con el header-->
+<!--Ejemplo 1. Enlaces a páginas externas-->
+    <a href="https://google.es" title="Ir a google" target="_blank">voy a la pagina de google</a>
+<br>
+<!--Ejemplo 2. Crear enlances internos, el atributo target es para que se abra en una pestaña nueva o en la misma-->
+    <a href="segundo.html" title="Segunda página" target="_blank">Ir a un enlace del proyecto</a>
+<br>
+<!--Ejemplo 3. Crear enlaces en la misma página, utilizando como atributo de llamada el id-->
+<!--id ElementoH2 encabezadPáginaPrimera-->
+<!--name ElementoH1 encabezadPáginaPrimera-->
+    <a href="#ElementoH2" title="Ir al H2">Ir al H2</a>
+<br>
+
+<!--Con almuadilla se recarga la página-->
+    <a href="#">recargar la página</a>
+<br>
+
+    <a href="puebas/tercero.html">Tercer Html</a>
+<br>
+
+<!--con ../ subimos un nivel en la carpeta-->
+    <a href="../+cotas/index.html">Mis mascotas</a>
+<br>
+
+<!--Enlace a un archivo-->
+    <a href="etiqueta-html.pdf" target="_blank">Mostrar todas las etiquetas HTML</a> <br>
+    <a href="img/favicon.png" target="_blank">Mostrar mi favicon</a> <br>
+    <a href="archivo-prueba.docx" target="_blank">Enlace a un archivo word<a> <br>
+
+<!--Enlaces para enviar correo electrónico-->
+    <a href="mailto:irinadvalle@gmail.com" title="Envias correo">Enviar Email</a> <br>
+
+<!--Enlazar una página a traves de una imagen
+La estructura es muy sencilla:
+Enlace <a> utiliza el atributo href para indicar la url de destino.
+El contenido del enlace <a> es una imagen <img> que tiene su atributo src para indicar el origen de la imagen.-->
+        <a href="pruebas/tercero.html"><img src="img/favicon.png"></a>
+       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--FOOTER, PIE DE PAGINA CON TEXTO TIPO INDICES-->
+    <footer>
+        <h2>Indice</h2>
+        <sub>1</sub><small>tiene un sentido muy semantico, Indica que es una cita al pie de pagina con texto más pequeño.</small>
+    </footer>
+
+</body>
+</html>

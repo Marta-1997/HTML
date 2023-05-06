@@ -8,11 +8,36 @@
 </head>
 <body>
     <h1>Videos en HTML</h1>
-    <!-- Vide directamente de la url -->
-    <video src="https://www.youtube.com/embed/H8eXOf1p1mo"></video>
-    <!--  -->
-    <h2>video de iframe: inserta un elemnto de la pagina</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/H8eXOf1p1mo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <!-- Vide directamente de un archivo en mi proyecto
+    Atributos:
+    ·autoplay: se reproduce automaticamente
+    ·controls: proporciona los medios de control sobre el video (play,pause,audio,etc)
+    ·preload:"preload=auto", 
+    auto, descargar los datos para precargar lo mejor posible el video
+    metadata: especa al navegador que es necesario descargar los metadatos del video para tener la informacion técnica adecuada:dimension,duracion,etc.
+    ·none: indica que no hay que precargar el archivo de video. Por lo tanto, el navegador no tendrá ninguna información técnica del archivo, ni dimension, ni duración, ni ninguna otra informacion, etc.
+·width y height: es preferible hacerlo desde la fuente, pero la etiqueta ·video la permite
+·loop: para que el video se reproduzca en bucle
+·muted: para desactivar el sonido. 
+·Poster: para poner una imagen de portada en el video 
+Observación: Los navegadores no autoreproducen el video al menos que le indiques que es muted, o esta desactivado el sonido.
+ -->
+    <video src="video/historia-señor.mp4" autoplay controls preload="auto" width="560" loop muted> </video>
+    <br>
+    <!-- Video de varios origenes o formatos -->
+    <video poster="img/oveja.jpg" controls preload="auto" width="560">
+        <source src="video/historia-señor.mp4">
+        <source src="video/historia-señor.webm">
+    </video>
 
+    <h2>video de iframe: inserta un elemnto de la pagina</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/bqobahFw9VM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<!--ARCHIVOS DE AUDIO  
+    Atributos:
+    src: donde se ubica el archivo-->
+    <h2>Archivos de audio</h2>
+    <audio src="audio/historia-señor.mp3" controls autoplay preload="auto" loop></audio>
+    
 </body>
 </html>
