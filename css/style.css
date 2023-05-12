@@ -66,3 +66,18 @@ P{
     background-color: hsla(60, 41%, 68%, 0.603);
     color: #ffffff;
     /*opacity: 0.5;*/
+}
+.bloque{
+    width: 250px;
+    height: 250px;
+    background-image: url("../img/oveja-sin-fondo.png");
+    background-size: cover;
+    border: 2px solid yellow;
+    margin: auto;
+    opacity: 0.8;
+}
+.boton{
+    padding: 10px;
+    margin: 16px;
+    color: aqua;
+}
