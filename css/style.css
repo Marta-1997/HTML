@@ -1,0 +1,68 @@
+/*Los comentarios con barra y asterico*/
+
+/*El asterisco * le añade los estilos a toda la pagina: 
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+*/
+*{
+    font-family: fantasy;
+}
+
+body{
+   
+    background-color: hsla(263, 24%, 74%, 0.843);
+    background-image: url("../img/loro.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-attachment: ;
+    background-size: cover;
+}
+.izquierda{
+    text-align: left;
+    color:rgb(85, 130, 18);
+}
+.my-header{
+    color:rgb(209, 229, 150);
+}
+
+P{
+    text-transform: uppercase;
+}
+.texto-centrado{
+    text-align: center;
+}
+.bloque-centrado{
+    width: 75%;
+    /*para centrar un bloque de forma horizontal div header footer section*/
+    margin: auto;
+    /*borde tiene 3 o mas propiedades: ancho del border, la forma, el color*/
+    /*Ejemplo de borde con atributos valor independientes
+    border-width: 2px;
+    border-style: inherit;
+    border-color:antiquewhite;
+    Poner borde con tods los valores en una sola linea
+    border: 2px solid black*/
+
+    border-top: 30px inset #ecf027;
+    border-bottom: 30px solid rgb(241, 238, 69);
+    border-left: 5px groove rgb(239, 231, 170);
+    border-right: 10px inset rgb(240, 238, 212);
+    background-color: rgb(255, 255, 255);
+
+    /*Hacer que las esquinas esten redondeadas, van en sentido agujas de reloj*/
+    border-radius: 25px 0px 25px 0px;
+}
+.parrafo-borde-izq{
+    color: #ffffff;
+    border-left: 8px solid rgb(231, 185, 19);
+}
+.bloque-centrado-sborde{
+    width: 75%;
+    margin: auto;
+    color: #000000;
+}
+.bloque-opaco{
+    background-color: hsla(60, 41%, 68%, 0.603);
+    color: #ffffff;
+    /*opacity: 0.5;*/
