@@ -15,7 +15,7 @@ body{
     background-image: url("../img/loro.jpg");
     background-repeat: no-repeat;
     background-position: center top;
-    background-attachment: ;
+    background-attachment:
     background-size: cover;
 }
 .izquierda{
@@ -26,11 +26,9 @@ body{
     color:rgb(209, 229, 150);
 }
 
-P{
-    text-transform: uppercase;
-}
 .texto-centrado{
     text-align: center;
+    color: #ffffff;
 }
 .bloque-centrado{
     width: 75%;
@@ -48,7 +46,7 @@ P{
     border-bottom: 30px solid rgb(241, 238, 69);
     border-left: 5px groove rgb(239, 231, 170);
     border-right: 10px inset rgb(240, 238, 212);
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.219);
 
     /*Hacer que las esquinas esten redondeadas, van en sentido agujas de reloj*/
     border-radius: 25px 0px 25px 0px;
@@ -73,11 +71,45 @@ P{
     background-image: url("../img/oveja-sin-fondo.png");
     background-size: cover;
     border: 2px solid yellow;
-    margin: auto;
+    margin: 25px auto;
     opacity: 0.8;
 }
 .boton{
+    width: 250px;
+    padding: 10px 30px;
+    margin: 25px;
+    color: rgb(255, 255, 255);
+    background-color: #3d3d3d;
+}
+.ex2 {
+    width: 300px;
+    padding: 55px 50px;
+    height: 200px;
+    background-color: rgb(1, 143, 190);
+}
+.ancho-largo{
+    margin: 50px;
+    max-width: 250px;
+    height: 250px;
+    background-color: rgb(236, 204, 77);
+    color: #cd1515;
+    border: 5px solid white;
     padding: 10px;
-    margin: 16px;
-    color: aqua;
+    outline: 1px solid red;
+    outline-offset: 10px;
+    text-align: right;
+}
+.texto{
+    text-align: justify;
+
+
+}
+.texto-resaltado{
+    text-decoration: underline overline;
+    color: #ffffff;
+}
+.estilo-enlaces{
+    text-decoration: none;
+    color: #ff9d00;
+    background-color: rgb(244, 251, 249);
 }
