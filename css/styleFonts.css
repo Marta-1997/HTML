@@ -5,3 +5,73 @@ section{
 .t1{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+.p1{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 12px;
+}
+.frase{
+    font-style: oblique; /*cursiva ligeramente mas fuerte*/
+    font-weight: bold;/*fuerza o peso de la fuente*/
+    font-size: 18px;
+}
+.frase2{
+    /*font-size: 10vw; /*ventana del navegador*/
+    font-family: 'Smokum', cursive; /*copiado de google fonts*/
+    font-weight: 700;
+    font-size: 35px;
+}
+
+/*Archivo externo de fuentes*/
+.icono1{
+    color: wheat;
+    font-size: 50px;
+    text-shadow: 2px 2px 5px black;
+}
+.icono2{
+    color: rgb(188, 188, 9);
+    font-size: 50px;
+}
+.icono3{
+    color: grey;
+    font-size: 50px;
+}
+.icono4{
+    color: rgb(214, 34, 34);
+    font-size: 50px;
+}
+.icono5{
+    color: rgb(78, 188, 47);
+    font-size: 50px;
+}
+.icono6{
+    color: black ;
+    font-size: 50px;
+}
+a{
+    text-decoration: none;
+    padding: 25px;
+    color: rgb(212, 81, 24);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-variant: small-caps;
+    letter-spacing: 2px;
+    
+    
+}
+a:hover{ /*n enlace cuando el usuario pasa el mouse sobre él*/
+    /*background-color: rgb(6, 93, 67);*/
+    text-decoration:underline wavy white;
+    letter-spacing: 5px;
+    color: white;
+}
+.menu{
+    list-style: none;
+    display: flex; 
+}
+.menu li{
+    padding: 25px;  
+    width: 150px;
+} 
+.menup{
+    background-color: rgb(170, 169, 169); /*para que sea una linea de color todo el menu*/
+    padding:5px;
+}
