@@ -1,0 +1,91 @@
+.contenedor{
+    width: 60%;
+    margin: auto;
+}
+.tituloP{
+    color: rgb(0, 0, 0);
+    background-color: rgb(196, 203, 255);
+    text-align: center;
+    padding: 10px 0; /*solo para arriba los demas serian 0*/
+    
+}
+.parrafo1{
+    text-align: justify;
+    text-align-last: right;/*justifica el parrafo pero la ultima linea esta alineada a la derecha*/
+}
+.loca{
+    direction: rtl;
+    unicode-bidi: bidi-override; /*escribe al reves, de derecha a izq como los arabes*/
+}
+
+/*Alineacion vertical de una img*/
+.img1{
+    vertical-align: baseline;/*baseline;normal*/
+    
+
+}
+.img2{
+    vertical-align: text-top;/*arriba del texto*/
+    
+}
+.img3{
+    vertical-align: text-bottom;/*abajo del texto*/
+    
+}
+.img4{
+    vertical-align: sub;
+}
+.img5{
+    vertical-align: super;
+}
+
+/*Decoracion del texto: text-decoration*/
+.p1{
+    text-decoration: overline;/*Linea arriba*/
+    text-decoration-color: rgb(255, 30, 109);
+    text-decoration-style: dotted ; /*linea de puntos*/
+    text-decoration-thickness: 5px;/*grosor de la linea*/
+}
+.p2{
+    text-decoration: line-through;/*Linea tachado*/
+}
+.p3{
+    text-decoration: underline #ed2121 wavy 2px; /*linea abajo*/
+
+}
+.p4{
+    text-decoration: overline underline;/*linea arriba y abajo*/
+}
+.enlace1{
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid #1763dc;
+    margin: 10px 0;
+    color: blueviolet;
+}
+/* transformacion del texto *//*Espaciado del texto*//*sombra de texto*/
+.t1{    
+    text-transform: uppercase;/*mayuscula*/
+    text-indent: 50px;/*Crea un espacion antes como tabulador*/
+    text-shadow: 2px 2px;/*sombra del mismo color de texto*/
+   
+}
+.t2{
+    text-transform: lowercase;/*minuscula*/
+    letter-spacing: 5px;/*espacio entre letras*/
+    color: white;
+    text-shadow: 2px 2px 5px black; /*fondo desenfocado blur*/
+}
+.t3{
+    text-transform: capitalize;/*primera mayuscula y resto minuscula*/
+    line-height: 5;/*altura de la linea en medidas que van desde 0-x sin unidad(px,%)*/
+    text-shadow: 0 0 3px #ff0000;
+    
+}
+.t4{
+    font-variant: small-caps;/*versalitas*/
+    word-spacing: 10px;/*espaciado entre palabras*/
+    text-shadow: 0 0 3px #ff0000, 0 0 5px #0000ff;
+}
+
+
