@@ -1,0 +1,109 @@
+.menu1,.menu2{
+    list-style: none; /*para que quite los puntitos de la lista*/
+    margin: 0;/**/
+    padding: 0;/**/
+    width: 200px;/*anchura*/
+    background-color: #f1f1f1;
+
+}
+/*dar estilo a cada elemento 'a' dentro de la lista*/
+.menu1 li a, .menu2 li a{
+    display: block;
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+.menu1 li a:hover{ /*hover para cuando pase por encima del elemento haga algo*/
+    background-color: #555;
+    color: rgb(229, 155, 155);
+}
+.menu2{
+    border: 1px solid #555;   
+}
+.menu2 li{
+    border-bottom: 1px solid #555;
+    text-align: center;
+}
+.menu2 li:last-child{ /*para el ultimo elemento*/
+    border-bottom: none;
+
+}
+.menu2 li a.active{
+    background-color: #97df99;
+    color: white;
+}
+.menu2 li a:hover:not(.active){
+    background-color: #555;
+    color: white;
+}
+
+.menu3{
+    list-style: none;
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+    position: sticky;/*se queda siempre ahi, pegajoso*/
+    overflow: hidden;
+}
+.menu3 li a{
+    display: block;/*para que lo muestre tipo bloque*/ 
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.menu3 li{
+    float: left;
+}
+.menu3 li a:hover{
+    background-color: #111;
+}
+.active{
+    background-color: #97df99;
+}
+.divCentrado{
+    width: 60%;
+    background-color: #111;
+    padding: 14px 0;
+    margin: auto;
+}
+.menu4{
+    margin: auto;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.menu4 li a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+}
+.menu4 li a:hover{
+    background-color: #c0b38c;
+}
+.menu5{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+.menu5 li{
+    float: left;
+}
+.menu5 li a, .dropbtn{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.menu5 li.dropdown{
+    display: inline-block; /*mostrar en linea*/
+}
+.dropdown-content{
+    display: none;
+}
+
+
