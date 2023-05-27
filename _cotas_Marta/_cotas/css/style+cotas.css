@@ -1,0 +1,108 @@
+body{
+    height: 70vw;
+}
+.cabecera,section,nav{
+    width: 75%;
+    margin: auto;
+}
+.img-header{
+    width: 100%;
+}
+.menu{
+    list-style: none;
+    display: flex; 
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+.menu li{
+    padding: 25px;  
+    width: 150px;
+    margin:auto;
+} 
+a:hover{ 
+    background-color: rgb(255, 255, 255);
+    letter-spacing: 5px;
+    color: rgb(0, 0, 0);
+    
+}
+.menuP{
+    background-color: rgb(189, 241, 173);
+    padding:5px;
+    
+}
+a{
+    text-decoration: none;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 5px;
+}
+.parrafo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #302F34 ;
+    text-align: justify;
+}
+
+.imagen1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #302F34 ;
+    display: inline-flex;
+    margin: auto;
+    width: 75%;
+
+    
+}
+
+.h1{
+    width: 90%;
+    margin: auto; 
+    font-family: Arial, Helvetica, sans-serif;
+    color: #033a0f ;
+    text-align:center;
+    padding: 10px 0;
+
+}
+.tabla{
+    width: 20%;
+    margin: auto; 
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000 ;
+    text-align: justify;
+    padding: 10px 0;
+    background-color: rgb(189, 241, 173);
+}
+.lista{
+    width: 20%;
+    margin: auto; 
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #302F34 ;
+}
+.p1{
+    width: 50%;
+    margin: auto; 
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #302F34 ;
+}
+form{
+    width: 50%;
+    margin: auto; 
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #302F34 ;
+}
+input{
+    width: 10%;
+    margin: auto;
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: #302F34 ;
+}
+

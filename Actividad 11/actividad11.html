@@ -5,17 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Actividad 11</title>
+    <style>
+        .imagen{
+            color: coral;
+        }
+        .gif{
+            color: cornflowerblue;
+        }
+        .videoy{
+            color: darkblue;
+        }
+        .video{
+            color: cadetblue;
+        }
+        .audio{
+            color: darkgreen;
+        }
+    </style>
 </head>
 <body>
-    <h2>Imagen estática</h2>
+    <h2 class="imagen">Imagen estática</h2>
     <img src="img/oveja-sin-fondo.png" alt="oveja">
-    <h2>Video de una página</h2>
+    <h2 class="gif">GIF</h2>
+    <img src="img/XOsX.gif" alt="pato">
+    <h2 class="videoy">Video de una página</h2>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/bqobahFw9VM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    <h2>Video</h2>
+    <h2 class="video">Video</h2>
     <video controls preload="auto" width="560">
         <source src="video/historia-señor.mp4">
     </video>
-    <h2>Audio</h2>
+    <h2 class="audio">Audio</h2>
     <audio src="audio/historia-señor.mp3" controls autoplay preload="auto" loop></audio>
     
 </body>

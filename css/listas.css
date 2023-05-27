@@ -1,0 +1,82 @@
+.contenedor{
+    width: 50%;
+    margin: auto;
+    border: 1px dotted grey;
+}
+ul{
+    border: 1px dotted grey;
+    width: 25%;
+    margin: 25px auto;
+    padding: 25px;
+}
+/*indicar un estilo pasando la posicion de la lista*/
+.lista1 li:nth-child(2){
+    background-color: cadetblue;
+    color: aliceblue;
+}
+.lista2{
+    list-style: square;
+    color: rgb(51, 175, 138);
+}
+.lista3{
+    list-style: inside url("../img/bolt.png"); /*para ponerle un icono*/
+}
+.lista3 li:nth-child(3){
+    list-style: outside url("../img/sqpurple.gif");
+}
+.tabla, .tabla2, .tabla3{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+}
+.tabla td, .tabla th{
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+.tabla th{
+    background-color:teal;
+    padding: 12px 0;
+    text-align: center;
+    color:tan;
+}
+
+/* Lineas: Par -  even Impar - odd*/
+.tabla tr:nth-child(even){
+    background-color: lightseagreen;
+}
+.tabla tr:nth-child(odd){
+    background-color:rgb(127, 202, 199);
+}
+.tabla td{
+    text-align: center;
+}
+.tabla tr:hover{
+    background-color: bisque;
+    color: rgb(57, 206, 166);
+}
+.tabla2 tr{
+    border-bottom: 1px dotted gray;
+    text-align: center;
+}
+.tabla2 td, .tabla2 th{
+    padding: 15px 0;
+}
+.tabla3{
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    box-shadow: 0 3px #ccc;
+    width: 80%;
+    margin: auto;
+}
+.tabla3 td,.tabla3 th{
+    text-align: center;
+    padding: 15px;
+    border-top: 1px solid #ccc;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.tabla3 tr th{
+    padding: 15px 0;
+}
+
