@@ -1,0 +1,29 @@
+body{
+    background:grey url("../img/vaca.jpg")
+    no-repeat fixed center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+}
+.izquierda, .derecha{
+    width: 200px;
+    background-color: darkgray;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+.derecha{
+    float: right;
+    margin-right: 15px;
+}
+.izquierda{
+    float: left;
+    margin-left: 15px;
+}
+header h1{
+    text-align: center;
+    padding-top: 100px;
+}
+.normal{
+    width: 80%;
+    margin: auto;
+    background-color: darkgray;
+    clear: both;
+}

@@ -1,3 +1,7 @@
+body{
+margin: 0;
+padding: 0;
+}
 .menu1,.menu2{
     list-style: none; /*para que quite los puntitos de la lista*/
     margin: 0;/**/
@@ -94,16 +98,40 @@
 }
 .menu5 li a, .dropbtn{
     display: inline-block;
-    color: white;
+    color: rgb(75, 176, 156);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    width: 200px;
 }
 .menu5 li.dropdown{
     display: inline-block; /*mostrar en linea*/
 }
 .dropdown-content{
     display: none;
+    position: absolute;
+    width: 232px;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a{
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+/*mostrar el contenido cuando pase el raton sobre el elemento 4*/
+.dropdown-content a:hover{
+    background-color: #f1f1f1;
+    color: #111;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+.menu5 li a:hover, .dropdown:hover{
+    background-color: rebeccapurple;
 }
 
 
